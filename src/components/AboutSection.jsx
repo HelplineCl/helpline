@@ -102,7 +102,7 @@ const AboutSection = () => {
           <Typography variant="h6" sx={{ fontWeight: "bold", color: "#222" }}>
             Programas utilizados para el desarrollo de nuestra app
           </Typography>
-          <Grid container spacing={2} justifyContent="center" sx={{ mt: 2 }}>
+          <Grid container spacing={2} justifyContent="center" sx={{ mt: 1 }}>
             {/* Simulación de logos */}
             {fotos.map((foto, index) => (
               <Grid item key={index}>
@@ -110,7 +110,7 @@ const AboutSection = () => {
                             src={foto.url}
                             alt={`Foto ${index + 1}`}
                             loading="lazy"
-                            style={{ width: "100px", height: "50px", objectFit: "contain" }}
+                            style={{ width: "100px", height: "50px", objectFit: "contain", background:"#ffffff",padding:"3px 10px", borderRadius:"20px" }}
                           />
               </Grid>
             ))}

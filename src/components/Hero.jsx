@@ -23,7 +23,7 @@ const GetStartedButton = styled(Button)(({ theme }) => ({
 }));
 
 const HeroSection = styled(Box)(({ theme }) => ({
-  background: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)",
+  background: "transparent",
   minHeight: "80vh",
   display: "flex",
   flexDirection: "column",
@@ -119,7 +119,7 @@ const Hero = () => {
             <GetStartedButton
               variant="contained"
               size="large"
-              sx={{ mr: 2, mb: { xs: 2, sm: 0 } }}
+              sx={{ mr: 2, mb: { xs: 0, sm: 0 } }}
             >
               Descárgala gratis
             </GetStartedButton>

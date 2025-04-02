@@ -6,6 +6,8 @@ import Hero from './components/Hero'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import GradientBackgroundSection from './components/GradientBackgroundSection'
 import AboutSection from './components/AboutSection'
+import Instagram from './components/Instagram'
+import Footer from './components/Footer'
 
 
 const theme = createTheme({
@@ -34,6 +36,8 @@ function App() {
         <AboutSection/>
         <Features/>
       </ThemeProvider>
+      <Instagram/>
+      <Footer/>
     </>
   )
 }

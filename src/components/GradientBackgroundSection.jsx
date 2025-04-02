@@ -7,44 +7,11 @@ import celulares from "/celulares.png"
 const GradientSection = styled(Box)(({ theme }) => ({
   position: "relative",
   width: "100%",
-  minHeight: "100vh",
   overflow: "hidden",
   background: "#ffffff",
   display: "flex",
   alignItems: "center",
   justifyContent: "center"
-}));
-
-const GradientCircle = styled(Box)(({ position, theme }) => ({
-  position: "absolute",
-  width: "50vw",
-  height: "50vw",
-  borderRadius: "50%",
-  opacity: 0.6,
-  filter: "blur(60px)",
-  transition: "all 0.3s ease-in-out",
-  ...(position === "top" && {
-    background: "radial-gradient(circle, rgba(100,181,246,0.8) 0%, rgba(100,181,246,0) 70%)",
-    top: "-25vw",
-    left: "-25vw",
-    [theme.breakpoints.down("sm")]: {
-      width: "70vw",
-      height: "70vw",
-      top: "-35vw",
-      left: "-35vw"
-    }
-  }),
-  ...(position === "bottom" && {
-    background: "radial-gradient(circle, rgba(156,39,176,0.8) 0%, rgba(156,39,176,0) 70%)",
-    bottom: "-25vw",
-    right: "-25vw",
-    [theme.breakpoints.down("sm")]: {
-      width: "70vw",
-      height: "70vw",
-      bottom: "-35vw",
-      right: "-35vw"
-    }
-  })
 }));
 
 const ImageContainer = styled(motion.div)(({ theme }) => ({
@@ -85,8 +52,6 @@ const GradientBackgroundSection = () => {
 
   return (
     <GradientSection>
-      <GradientCircle position="top" />
-      <GradientCircle position="bottom" />
       
       <Container maxWidth="lg">
         <ImageContainer
